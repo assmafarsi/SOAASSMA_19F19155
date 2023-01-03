@@ -1,0 +1,27 @@
+//Declare variables to store the sales data for each product and the names of the highest and lowest selling products.
+let productASales = 0;
+let productBSales = 0;
+let productCSales = 0;
+let highestSellingProduct = '';
+let lowestSellingProduct = '';
+
+//Use an array to store the sales data for each product.
+const salesData = [200, 50, 120, 150, 60, 90, 100, 40, 80];
+//Use processing statements to calculate the total sales for each product and determine the highest and lowest selling product.
+productASales = salesData[0] + salesData[3] + salesData[6];
+productBSales = salesData[1] + salesData[4] + salesData[7];
+productCSales = salesData[2] + salesData[5] + salesData[8];
+
+if (productASales > productBSales && productASales > productCSales) {
+  highestSellingProduct = 'Product A';
+} else if (productBSales > productASales && productBSales > productCSales) {
+  highestSellingProduct = 'Product B';
+} else {
+  highestSellingProduct = 'Product C';
+}
+if (productASales < productBSales && productASales < productCSales) {
+  lowestSellingProduct = 'Product A';
+} else if (productBSales < productASales && productBSales < productCSales) {
+  lowestSellingProduct = 'Product B';
+} else {
+  lowestSellingProduct = 'Product C'; }
